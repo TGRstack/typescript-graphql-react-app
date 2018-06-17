@@ -5,7 +5,10 @@
   "main": "build/index.html",
   "typings": "./build/index",
   "dependencies": {
-    "react": "16.4.1"
+    "gx": "1.0.0-rc4",
+    "react": "16.4.1",
+    "react-helmet": "5.2.0",
+    "react-router-dom": "4.3.1"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.51",
@@ -14,6 +17,8 @@
     "@babel/preset-react": "7.0.0-beta.51",
     "@types/react": "16.3.17",
     "@types/react-dom": "16.0.6",
+    "@types/react-helmet": "5.0.6",
+    "@types/react-router-dom": "4.2.7",
     "babel-loader": "8.0.0-beta.3",
     "commitizen": "2.10.1",
     "copy-webpack-plugin": "4.5.1",
