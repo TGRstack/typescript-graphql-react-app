@@ -6,7 +6,7 @@ const release = require('./release.js')
 const start = require('./start.js')
 
 const scrub = {
-  build: rimraf('dist/'),
+  build: rimraf('build/'),
 }
 
 const git = {

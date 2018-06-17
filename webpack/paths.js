@@ -5,7 +5,7 @@ const path = require('path');
 //   : path.resolve(process.cwd(), 'build', 'client')
 // const cwd = path.resolve(process.cwd())
 const rootPath = path.resolve(__dirname, '..')
-const buildPath = path.resolve(rootPath, 'dist')
+const buildPath = path.resolve(rootPath, 'build')
 const srcPath = path.resolve(rootPath, 'src')
 
 const build = {

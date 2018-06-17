@@ -28,9 +28,9 @@
   * release.patch - standard-version --release-as patch
   * release.minor - standard-version --release-as minor
   * release.major - standard-version --release-as major
-  * scrub.build - node node_modules/rimraf/bin.js dist/
+  * scrub.build - node node_modules/rimraf/bin.js build/
   * start - ts-node src/index.ts
-  * start.build - node dist/index.js
+  * start.build - node build/index.js
   * test - echo "Error: no test specified" && exit 1
   * p - nps build start.build
 **/

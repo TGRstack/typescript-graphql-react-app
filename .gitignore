@@ -2,7 +2,7 @@
 .env
 
 # Build output folders
-dist/
+build/
 
 # Logs
 logs

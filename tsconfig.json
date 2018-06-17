@@ -1,7 +1,7 @@
 {
   "exclude": [
     "**/*.spec.ts",
-    "dist",
+    "build",
     "webpack",
     "scripts",
     ".vscode",
@@ -12,7 +12,7 @@
   ],
   "compilerOptions": {
     /* Basic Options */
-    "outDir": "dist",                         /* Redirect output structure to the directory. */
+    "outDir": "build",                         /* Redirect output structure to the directory. */
     "lib": ["esnext", "dom"],                 /* Specify library files to be included in the compilation. */
     "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
     "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */

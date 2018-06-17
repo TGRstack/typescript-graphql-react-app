@@ -2,8 +2,8 @@
   "name": "2018-ts-module",
   "version": "1.0.0",
   "description": "TGRStack TS-React-Module w/ Declarations, WebPack, and Opinions.",
-  "main": "dist/index.html",
-  "typings": "./dist/index",
+  "main": "build/index.html",
+  "typings": "./build/index",
   "dependencies": {
     "react": "16.4.1"
   },
