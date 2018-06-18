@@ -21,5 +21,6 @@ module.exports = {
   },
   watch: {
     default: 'chokidar '+filePaths+' -c \"nps lint\" --initial --verbose',
-  }
+  },
+  type: 'tsc -p tsconfig.json --noEmit',
 }
