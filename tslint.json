@@ -44,7 +44,7 @@
       "no-console": [
         true,
         "log",
-        "error",
+        // "error", // # allows console errors
         "debug",
         "info",
         "time",
