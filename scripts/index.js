@@ -37,6 +37,14 @@ const shortcuts = {
     default: 'nps commit.zen.retry',
     description: 'Retry last commit.',
   },
+  l: {
+    default: 'nps lint',
+    description: 'Run linter.',
+  },
+  lf: {
+    default: 'nps lint.fix',
+    description: 'Fix lint errors.',
+  },
   // FIXME: w/ a prompt. We don't want to run this accidentally!
   //   https://stackoverflow.com/q/50770212/604950
   // r: {
