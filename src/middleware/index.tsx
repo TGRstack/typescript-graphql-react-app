@@ -1,14 +1,14 @@
 import * as React from 'react'
-// import Apollo from './apollo'
+import Apollo from './apollo'
 import Router from './router'
 
 function Middlwares({children}: {children: React.ReactChild}) {
   return (
-    // <Apollo>
+    <Apollo>
       <Router>
         {children}
       </Router>
-    // </Apollo>
+    </Apollo>
   )
 }
 

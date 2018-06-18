@@ -4,14 +4,13 @@ import * as React from 'react'
 // import Helmet from './Helmet'
 
 import Routes from '../routes/'
-// import './globals.css'
+import './global.css'
 
 export default function() {
   return (
     <div>
       {/* <Helmet /> */}
       <Routes />
-      {/* <Hello /> */}
     </div>
   )
 }

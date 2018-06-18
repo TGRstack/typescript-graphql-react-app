@@ -3,22 +3,22 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Hello from '../../components/hello'
+import NetworkStatus from '../../components/network'
+import './Home.css'
 
 function HomeEntrancePage() {
   return (
-    <div>
+    <div className="body--container">
       <Helmet>
         <title>Homepage</title>
       </Helmet>
 
       <Gx col={12}>
-        <div className="rtv-content--entrance">
+        <div>
           <h2>
             <Hello />
           </h2>
-          <p>
-            Set the info you care most about...
-          </p>
+          <NetworkStatus />
         </div>
       </Gx>
     </div>

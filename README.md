@@ -40,7 +40,7 @@ This starter kit is a launching point for TS React module development. Running t
 
 - [x] :dragon:  React 16+
 - [x] :space_invader: HMR reloads the Changed Code w/o refreshing the entire page
-- [ ] :gem:  `apollo-client` w/ `link-state` instead of `react-redux`
+- [x] :gem:  `apollo-client` w/ `link-state` instead of `react-redux`
 
 ### Tests
 
@@ -52,6 +52,7 @@ This starter kit is a launching point for TS React module development. Running t
 - [x] 📦  All source is bundled using Webpack v4
 - [x] 🌟  webpack for dev, prod, common
 - [x] 🚦  `ts-loader` for compiling typescript
+- [x] 🚦  `webpack-graphql-loader` for separating gql from ts files
 - [x] 💦  babel-loader for additional polyfills (browser support)
 - [ ] 😎  HappyPack
 - [ ] 🤖  Auto generated Vendor DLL for smooth development experiences

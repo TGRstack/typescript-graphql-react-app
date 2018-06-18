@@ -2,12 +2,10 @@ const { series, rimraf, } = require('nps-utils') // concurrent, setColors
 
 const build = require('./build.js')
 const commit = require('./commit.js')
+const lint = require('./lint.js')
 const release = require('./release.js')
 const start = require('./start.js')
-
-const scrub = {
-  build: rimraf('build/'),
-}
+const scrub = require('./scrub.js')
 
 const git = {
   tags: {
@@ -52,6 +50,7 @@ const scripts =  {
     commit,
     default: start.default,
     git,
+    lint,
     publish,
     release,
     scrub,
