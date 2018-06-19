@@ -5,10 +5,11 @@ query {
   networkStatus @client {
     isConnected
   }
-}`
+}
+`
 
 export const updateStatus = gql`
-  mutation updateNetworkStatus($isConnected: Boolean) {
-    updateNetworkStatus(isConnected: $isConnected) @client
-  }
+mutation ($isConnected: Boolean) {
+  updateNetworkStatus(isConnected: $isConnected) @client
+}
 `

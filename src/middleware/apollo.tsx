@@ -7,6 +7,8 @@ import { withClientState } from 'apollo-link-state'
 import * as React from 'react'
 import { ApolloProvider } from 'react-apollo'
 
+import { ResolverDefaults,  Resolvers, } from '../gql/'
+
 interface IProps {
   graphqlURL: string,
   children: React.ReactChild
@@ -19,26 +21,8 @@ export default class ApolloClientProvider extends React.Component<IProps> {
 
   private _stateLink = withClientState({
     cache: this._cache,
-    defaults: {
-      networkStatus: {
-        __typename: 'NetworkStatus',
-        isConnected: false,
-      }
-    },
-    resolvers: {
-      Mutation: {
-        updateNetworkStatus: (_, { isConnected }, { cache }) => {
-          const data = {
-            networkStatus: {
-              __typename: 'NetworkStatus',
-              isConnected
-            },
-          }
-          cache.writeData({ data })
-          return null
-        },
-      },
-    },
+    defaults: ResolverDefaults,
+    resolvers: Resolvers,
   })
 
   private _httpLink = new HttpLink({

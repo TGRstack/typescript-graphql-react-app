@@ -1,5 +1,5 @@
 <p align='center'>
-  <h1 align='center'>Typescript React Module w/ Definitions (TGRStack)</h1>
+  <h1 align='center'>Typescript React App (TGRStack)</h1>
 </p>
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-2.8.1-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
@@ -13,7 +13,7 @@
 
 ## About
 
-This starter kit is a launching point for TS React module development. Running the build script compiles `src/` into a buildribution that is ready to be published to a registry like NPM, and can easily be consumed by other React modules or Apps. This module is part of a collection of uniformly built starter-kits designed for large-scale application development with TypeScript, GraphQL, and React. Find these, articles, and examplse at [www.TGRStack.com](http://www.TGRStack.com). Skip to the bottom for links to a series of tutorials that walkthrough the creation of this module.
+This starter kit is a launching point for TS React module development. Running the build script compiles `src/` into a build that is ready to be deployed to a server. This module is part of a collection of uniformly built starter-kits designed for large-scale application development with TypeScript, GraphQL, and React. Find these, articles, and examplse at [www.TGRStack.com](http://www.TGRStack.com). Skip to the bottom for links to a series of tutorials that walkthrough the creation of this module.
 
 ## Commands - READ THIS
 
@@ -33,7 +33,6 @@ This starter kit is a launching point for TS React module development. Running t
 - [x] 🚀  ES2018+ support syntax that is stage-3 or later in the TC39 process.
 - [x] 🎛  Preconfigured to support development and optimized production builds
 - [x] 🎶  `typescript` incremental returns reducing development bugs
-- [ ] :guardsman:  Declaration file for TS included with the buildribution
 - [x] 🚦  `tslint` configured for strict, consistent, code style
 
 ### React
@@ -52,7 +51,7 @@ This starter kit is a launching point for TS React module development. Running t
 - [x] 📦  All source is bundled using Webpack v4
 - [x] 🌟  webpack for dev, prod, common
 - [x] 🚦  `ts-loader` for compiling typescript
-- [x] 🚦  `webpack-graphql-loader` for separating gql from ts files
+- [ ] 🚦  `webpack-graphql-loader` for separating gql from ts files
 - [x] 💦  babel-loader for additional polyfills (browser support)
 - [ ] 😎  HappyPack
 - [ ] 🤖  Auto generated Vendor DLL for smooth development experiences

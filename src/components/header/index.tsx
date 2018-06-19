@@ -3,15 +3,15 @@ import * as React from 'react'
 import LoggedIn from './Header.LoggedIn'
 import LoggedOut from './Header.LoggedOut'
 
-import { connectIsConnected } from '../network/NetworkOperations'
+import { connectIsAuthed } from '../auth/AuthOperations'
 
 interface IProps {
-  isConnected: boolean
+  isAuthed: boolean
 }
 
 class Header extends React.Component<IProps, {}> {
   render() {
-    if (this.props.isConnected === true) {
+    if (this.props.isAuthed === true) {
       return <LoggedIn />
     }
 
@@ -19,4 +19,4 @@ class Header extends React.Component<IProps, {}> {
   }
 }
 
-export default connectIsConnected(Header)
+export default connectIsAuthed(Header)

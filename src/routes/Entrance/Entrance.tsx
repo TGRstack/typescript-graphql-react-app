@@ -2,7 +2,7 @@ import Gx from 'gx'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
-import NetworkStatus from '../../components/network'
+import { LoginForm, RegisterForm } from '../../components/auth/'
 import './Entrance.css'
 
 function EntrancePage() {
@@ -12,10 +12,11 @@ function EntrancePage() {
         <title>Entrancepage</title>
       </Helmet>
 
-      <Gx col={12}>
-        <div>
-          <NetworkStatus />
-        </div>
+      <Gx col={6}>
+        <LoginForm />
+      </Gx>
+      <Gx col={6}>
+        <RegisterForm />
       </Gx>
     </div>
   )
