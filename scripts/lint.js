@@ -7,10 +7,10 @@ const filePaths = [
   "src/**/**/**/*.tsx",
   "src/**/**/**/**/*.ts",
   "src/**/**/**/**/*.tsx",
-  "scritps/lint.js",
-  "package.json",
+  "scripts/lint.js",         // this file
   "tslint.json",
   "tsconfig.json",
+  "package.json",
 ].join(' ')
 
 module.exports = {

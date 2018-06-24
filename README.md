@@ -2,14 +2,18 @@
   <h1 align='center'>Typescript React App (TGRStack)</h1>
 </p>
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-2.8.1-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
-[![styled with TSLint](https://img.shields.io/badge/styled_with-TSLint-ff69b4.svg?style=flat-square)](https://github.com/palantir/tslint/)
-[![WebPack](https://img.shields.io/badge/WebPack-4.5.0-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
-[![Node](https://img.shields.io/badge/Node-8.11.2-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
+[![TypeScript](https://img.shields.io/badge/TypeScript-2.9.1-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
+[![React](https://img.shields.io/badge/React-16.4.1-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
+[![Apollo](https://img.shields.io/badge/Apollo-2.3.4-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
+[![WebPack](https://img.shields.io/badge/WebPack-4.12.0-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
+[![Node](https://img.shields.io/badge/Node-8.11.2-blue.svg?style=flat-square)](https://nodejs.org/en/)
+
+[![TSLint](https://img.shields.io/badge/TS_Lint-5.10.0-8400ff.svg?style=flat-square)](https://github.com/palantir/tslint/)
+[![TS-Jest](https://img.shields.io/badge/TS_Jest-22.4.6-8400ff.svg?style=flat-square)](https://nodejs.org/en/)
 
 [![NPS friendly](https://img.shields.io/badge/NPS-friendly-brightgreen.svg?style=flat-square)](https://github.com/kentcdodds/nps)
 [![Commitizen friendly](https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
-[![Semver friendly](https://img.shields.io/badge/semver-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
+[![Semver friendly](https://img.shields.io/badge/SemVer-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 
 ## About
 
@@ -35,16 +39,22 @@ This starter kit is a launching point for TS React module development. Running t
 - [x] 🎶  `typescript` incremental returns reducing development bugs
 - [x] 🚦  `tslint` configured for strict, consistent, code style
 
+### GraphQL
+
+- [x] :gem:  `apollo-client` w/ `link-state` instead of `react-redux`
+
 ### React
 
 - [x] :dragon:  React 16+
 - [x] :space_invader: HMR reloads the Changed Code w/o refreshing the entire page
-- [x] :gem:  `apollo-client` w/ `link-state` instead of `react-redux`
 
 ### Tests
 
-- [ ] 🎭 `jest` as the test framework.
-- [ ] 🎭 `ts-jest` configured to test TS files, uses tsconfig.jest.json, and skip babel.
+- [x] 🎭 `jest` as the test framework.
+- [x] 🎭 `ts-jest` configured to test TS files, uses tsconfig.jest.json, and skip babel.
+- [x] 🎭 `enzyme`  makes it easier to assert, manipulate, and traverse components.
+- [x] 🎭 `react-testing-library` maintainable tests that avoid impl. details.
+- [x] 🎭 `jest-dom` patterns for dom testing, compat w/ `react-testing-library`.
 
 ### Build (w/ Webpack)
 

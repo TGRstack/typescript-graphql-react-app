@@ -60,6 +60,7 @@
       "no-eval": true,
       "no-inferrable-types": [true, "ignore-params"], // saves from overtyping
       // "no-import-side-effect": true, // will require an ignore every time css is imported
+      "no-implicit-dependencies": [true, "dev"],
       "no-shadowed-variable": true,
       "no-string-literal": true,
       "no-submodule-imports": [

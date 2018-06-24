@@ -6,6 +6,7 @@ const lint = require('./lint.js')
 const release = require('./release.js')
 const start = require('./start.js')
 const scrub = require('./scrub.js')
+const test = require('./test.js')
 
 const git = {
   tags: {
@@ -63,7 +64,7 @@ const scripts =  {
     release,
     scrub,
     start,
-    test: 'echo "Error: no test specified" && exit 1',
-}  
+    test,
+}
 
 module.exports = Object.assign({}, shortcuts, scripts,) // appends scripts to shortcuts so they are grepp'd first
