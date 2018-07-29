@@ -1,22 +1,19 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom/'
 
-import LoggedIn from './Header.LoggedIn'
-import LoggedOut from './Header.LoggedOut'
+import Header from './Header'
+import * as S from './Header.scss'
 
-import { connectIsAuthed } from '../auth/AuthOperations'
-
-interface IProps {
-  isAuthed: boolean
-}
-
-class Header extends React.Component<IProps, {}> {
+class LoggedOutHeader extends React.Component<{}, {}> {
   render() {
-    if (this.props.isAuthed === true) {
-      return <LoggedIn />
-    }
+    const items = [
+      <span className={S.text}>Header</span>,  // tslint:disable-line jsx-key
+      <Link to="/">Home</Link>,                               // tslint:disable-line jsx-key
+      <Link to="/foo">Foo</Link>,                             // tslint:disable-line jsx-key
+    ]
 
-    return <LoggedOut />
+    return <Header items={items} />
   }
 }
 
-export default connectIsAuthed(Header)
+export default LoggedOutHeader

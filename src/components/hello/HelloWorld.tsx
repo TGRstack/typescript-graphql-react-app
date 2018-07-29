@@ -4,10 +4,10 @@
 **/
 
 import * as React from 'react'
-import './HelloWorld.css'
+import * as S from './HelloWorld.css'
 
 function HelloWorldMaker(first: string, second: string): JSX.Element {
-  return <div className="rainbow">{first} {second}</div>
+  return <div className={S.rainbow}>{first} {second}</div>
 }
 
 export default HelloWorldMaker

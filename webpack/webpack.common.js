@@ -27,17 +27,33 @@ const typescript = {
     }
   ]
 }
-// ## GRAPHQL
-// const graphql = {
-//   test: /\.(graphql|gql)$/,
-//   exclude: /node_modules/,
-//   loader: 'graphql-tag/loader',
-// }
-// ## STYLES
-const styles = {
+
+
+// ## CSS-modules w/ Typescript
+// https://medium.com/@kswanie21/css-modules-sass-in-create-react-app-37c3152de9
+const moduleCss = {
   test: /\.s?css$/,
-  loaders: ["style-loader", "css-loader", "sass-loader"],
+  use: [
+    'style-loader',
+    {
+      loader: 'typings-for-css-modules-loader',
+      options: {
+        modules: true,
+        importLoaders: 2,
+        localIdentName: '[path][name]__[local]--[hash:base64:5]',
+      }
+    },
+    'sass-loader',
+  ],
 }
+
+// ## STYLES
+// support global files
+const globalCss = {
+  test: /^global.css/,
+  loaders: ["style-loader", 'sass-loader',],
+}
+
 // ## FILES like csv and images
 const files = {
   // test: /\.(png|jpg|gif)$/,
@@ -70,8 +86,8 @@ module.exports = {
   module: {
     rules: [
       typescript,
-      // graphql,
-      styles,
+      globalCss,
+      moduleCss,
       files,
     ],
   },
@@ -82,6 +98,6 @@ module.exports = {
       safe: true,    // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
       systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
       // silent: true   // hide any errors
-    })
+    }),
   ],
 };

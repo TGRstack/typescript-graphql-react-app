@@ -1,22 +1,9 @@
 import * as React from 'react'
 
-import LoggedIn from './Routes.LoggedIn'
-import LoggedOut from './Routes.LoggedOut'
+import Routes from './Routes'
 
-import { connectIsAuthed } from '../components/auth/AuthOperations'
-
-interface IProps {
-  isAuthed: boolean
+function routesIndex() {
+  return <Routes />
 }
 
-class AuthedRoutes extends React.Component<IProps, {}> {
-  render() {
-    if (this.props.isAuthed === true) {
-      return <LoggedIn />
-    }
-
-    return <LoggedOut />
-  }
-}
-
-export default connectIsAuthed(AuthedRoutes)
+export default routesIndex

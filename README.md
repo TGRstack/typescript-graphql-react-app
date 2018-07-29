@@ -48,6 +48,12 @@ This starter kit is a launching point for TS React module development. Running t
 - [x] :dragon:  React 16+
 - [x] :space_invader: HMR reloads the Changed Code w/o refreshing the entire page
 
+### CSS
+
+- [x] :sunrise: `typings-for-css-modules-loader` replaces 'css-loader' for webpack
+- [x] :carousel_horse: `typings-for-css-modules-loader` generates d.ts for css files
+- [x] :city_sunrise: `sass-loader` adds vars, imports, heirarchies to css.
+
 ### Tests
 
 - [x] 🎭 `jest` as the test framework.

@@ -3,22 +3,18 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 
 import Hello from '../../components/hello'
-import NetworkStatus from '../../components/network'
-import './Home.css'
+import * as S from './Home.css'
 
 function HomeEntrancePage() {
   return (
-    <div className="body--container">
+    <div className={S.container}>
       <Helmet>
         <title>Homepage</title>
       </Helmet>
 
       <Gx col={12}>
         <div>
-          <h2>
-            <Hello />
-          </h2>
-          <NetworkStatus />
+          <Hello />
         </div>
       </Gx>
     </div>

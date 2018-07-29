@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom'
 import Error404 from './Error404'
 import Home from './Home'
 
-class LoggedInRoutes extends React.Component<{}, {}> {
+class Routes extends React.Component<{}, {}> {
   render() {
     return <Switch>
       <Route exact path="/" component={Home} />>
@@ -12,4 +12,4 @@ class LoggedInRoutes extends React.Component<{}, {}> {
     </Switch>
   }
 }
-export default LoggedInRoutes
+export default Routes

@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-import './Header.scss'
+import * as T from '../theme.scss'
+import * as S from './Header.scss'
 
 interface IProps {
   items: React.ReactChild[],
@@ -15,7 +16,7 @@ class Header extends React.Component<IProps, {}> {
 
   render() {
     return <nav>
-      <div className="list--horizontal">
+      <div className={[S.list, T.fill_primary].join(' ')}>
         <ul>
           {this.renderItems()}
         </ul>
