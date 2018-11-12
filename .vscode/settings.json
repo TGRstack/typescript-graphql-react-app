@@ -6,10 +6,10 @@
     "**/db": true,
     "**/jest": true,
     "**/lib": true,
-    "**/node_modules": false,    // hide all folders that doesn't start with '@[p,t]'
+    "**/node_modules": false,    // hide all folders that doesn't start with '@t'
     "**/node_modules/.*": true,
     "**/node_modules/[abcdefghijklmnopqrstuvwxyz]*": true,
-    "**/node_modules/@[abcdefghijklmnoqrsuvwxyz]*": true,
+    "**/node_modules/@[abcdefghijklmnopqrsuvwxyz]*": true,
   },
   "search.exclude": {
     "**/bin": true,
@@ -18,9 +18,9 @@
     "**/db": true,
     "**/jest": true,
     "**/lib": true,
-    "**/node_modules": false,    // hide all folders that doesn't start with '@[p,t]'
+    "**/node_modules": false,    // hide all folders that doesn't start with '@t'
     "**/node_modules/.*": true,
     "**/node_modules/[abcdefghijklmnopqrstuvwxyz]*": true,
-    "**/node_modules/@[abcdefghijklmnoqrsuvwxyz]*": true,
+    "**/node_modules/@[abcdefghijklmnopqrsuvwxyz]*": true,
   },
 }
