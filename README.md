@@ -2,18 +2,18 @@
   <h1 align='center'>Typescript React App (TGRStack)</h1>
 </p>
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-2.9.1-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
-[![React](https://img.shields.io/badge/React-16.4.1-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
-[![Apollo](https://img.shields.io/badge/Apollo-2.3.4-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
-[![WebPack](https://img.shields.io/badge/WebPack-4.12.0-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3.0.1-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
+[![React](https://img.shields.io/badge/React-16.4.1-blue.svg?style=flat-square)](https://github.com/facebook/react)
+[![Apollo](https://img.shields.io/badge/Apollo-2.3.4-blue.svg?style=flat-square)](https://github.com/apollographql/apollo-client)
+[![WebPack](https://img.shields.io/badge/WebPack-3.0.7-blue.svg?style=flat-square)](https://github.com/webpack/webpack/)
 [![Node](https://img.shields.io/badge/Node-8.11.2-blue.svg?style=flat-square)](https://nodejs.org/en/)
 
-[![TSLint](https://img.shields.io/badge/TS_Lint-5.10.0-8400ff.svg?style=flat-square)](https://github.com/palantir/tslint/)
-[![TS-Jest](https://img.shields.io/badge/TS_Jest-22.4.6-8400ff.svg?style=flat-square)](https://nodejs.org/en/)
+[![TSLint](https://img.shields.io/badge/TS_Lint-5.11.0-8400ff.svg?style=flat-square)](https://github.com/palantir/tslint/)
+[![TS-Jest](https://img.shields.io/badge/TS_Jest-22.4.6-8400ff.svg?style=flat-square)](https://github.com/kulshekhar/ts-jest)
 
 [![NPS friendly](https://img.shields.io/badge/NPS-friendly-brightgreen.svg?style=flat-square)](https://github.com/kentcdodds/nps)
 [![Commitizen friendly](https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
-[![Semver friendly](https://img.shields.io/badge/SemVer-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
+[![Semver friendly](https://img.shields.io/badge/SemVer-friendly-brightgreen.svg?style=flat-square)](https://docs.npmjs.com/about-semantic-versioning)
 
 ## About
 
