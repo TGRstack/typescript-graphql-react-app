@@ -7,6 +7,10 @@ const filePaths = [
   "src/**/**/**/*.tsx",
   "src/**/**/**/**/*.ts",
   "src/**/**/**/**/*.tsx",
+  "src/**/**/**/**/**/*.ts",
+  "src/**/**/**/**/**/*.tsx",
+  "src/**/**/**/**/**/**/*.ts",
+  "src/**/**/**/**/**/**/*.tsx",
   "scripts/lint.js",         // this file
   "tslint.json",
   "tsconfig.json",

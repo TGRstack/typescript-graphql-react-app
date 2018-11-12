@@ -1,8 +1,9 @@
-import Gx from 'gx'
+import Gx from '@tgrx/gx'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
-import Hello from '../../components/hello'
+import Hello from 'modules/ui/core/hello'
+import List from 'modules/ui/core/list'
 import * as S from './Home.css'
 
 function HomeEntrancePage() {
@@ -13,9 +14,9 @@ function HomeEntrancePage() {
       </Helmet>
 
       <Gx col={12}>
-        <div>
-          <Hello />
-        </div>
+        <List ordered>
+          {Hello('Welcome to TGR-fullstack prototyping toolkit')}
+        </List>
       </Gx>
     </div>
   )

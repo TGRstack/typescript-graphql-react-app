@@ -7,7 +7,7 @@ import { withClientState } from 'apollo-link-state'
 import * as React from 'react'
 import { ApolloProvider } from 'react-apollo'
 
-import { ResolverDefaults,  Resolvers, } from '../gql/'
+import { ResolverDefaults,  Resolvers, } from '../gql'
 
 interface IProps {
   graphqlURL: string,

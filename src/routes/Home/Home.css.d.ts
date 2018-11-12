@@ -1,5 +1,5 @@
 export interface IHomeCss {
-  'container': string
+  'container': string;
 }
 
-export const locals: IHomeCss
+export const locals: IHomeCss;

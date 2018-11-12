@@ -6,6 +6,7 @@ const lint = require('./lint.js')
 const release = require('./release.js')
 const start = require('./start.js')
 const scrub = require('./scrub.js')
+// const setup = require('./setup.js')
 const test = require('./test.js')
 
 const git = {
@@ -46,6 +47,22 @@ const shortcuts = {
     default: 'nps lint.fix',
     description: 'Fix lint errors.',
   },
+  t: {
+    default: 'nps test',
+    description: 'Run tests.',
+  },
+  tu: {
+    default: 'nps test.update',
+    description: 'Update test snapshots.',
+  },
+  tw: {
+    default: 'nps test.watch',
+    description: 'Run test watcher.',
+  },
+  type: {
+    default: 'nps lint.type',
+    description: 'All TypeScript Errors.',
+  },
   // FIXME: w/ a prompt. We don't want to run this accidentally!
   //   https://stackoverflow.com/q/50770212/604950
   // r: {
@@ -63,6 +80,7 @@ const scripts =  {
     publish,
     release,
     scrub,
+    // setup,
     start,
     test,
 }

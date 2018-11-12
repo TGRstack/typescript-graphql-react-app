@@ -7,6 +7,8 @@ const filePaths = [
   "src/**/**/**/*.tsx",
   "src/**/**/**/**/*.ts",
   "src/**/**/**/**/*.tsx",
+  "src/**/**/**/**/**/*.ts",
+  "src/**/**/**/**/**/*.tsx",
   "scripts/test.js",        // this file
   "jest.config.js",
   "package.json",

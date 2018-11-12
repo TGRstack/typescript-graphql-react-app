@@ -108,14 +108,27 @@ Open package.json and reset following fields:
 
 Now go make some changes to `src/index.ts` to see the tooling in action.
 
+## File Structure
+
+```text
+src/
+├── app/          - global app stuff
+├── components/   - the pieces used in the routes, abstracts modules
+├── middlewares/  - third-party HOC functionality (apollo, router)
+└── modules/      - first-party modules
+    └── ui        - prototyping the module before extracting it to its own module
+├── routes/       - define page for a route
+├── types/        - ts modules, common, interfaces
+└── utils/      - useful functions
+```
 
 ## Stack
+
 - [TS-React-App](https://github.com/Falieson/2018-typescript-react-app)
 - [TS-GraphqL-Endpoint](https://github.com/Falieson/2018-typescript-graphql-endpoint)
 - [TS-Module](https://github.com/Falieson/2018-typescript-module)
 
-
 ## Docs
+
 - [HowTo make a TS Module w/ Declarations](http://www.tgrstack.com/#ts-module_articles)
 - [Changelog](/CHANGELOG.md)
-

@@ -29,4 +29,5 @@ module.exports = {
   _: rootPath,
   build,
   src,
+  node_modules: path.resolve(rootPath, 'node_modules')
 }

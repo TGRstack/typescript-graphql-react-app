@@ -1,3 +1,5 @@
+@import './theme.scss';
+
 html {
   box-sizing: border-box;
   /* font-family: Arial, sans-serif; */
@@ -12,3 +14,6 @@ html {
   padding: 0;
 }
 
+body {
+  @extend .bg_primary;
+}

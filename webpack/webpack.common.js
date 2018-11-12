@@ -1,32 +1,45 @@
 const Dotenv = require('dotenv-webpack');
 const path = require('path')
 const WriteFilePlugin = require('write-file-webpack-plugin');
+// const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const paths = require('./paths')
 
 // #  RULES
 // ## TS w/ BABEL
-const tsOptions = {
-  context: paths._,
-  configFile: path.resolve(paths._, 'tsconfig.json'),
-  transpileOnly: true,
-}
-const typescript = {
-  test: /\.tsx?$/,
-  include: paths.src._,
-  use: [
-    {
-      loader: 'babel-loader',
-      options: {
-        babelrc: true,
+const typescript = (() => {
+  const configFile = path.resolve(paths._, 'tsconfig.json')
+  const tsOptions = {
+    context: paths._,
+    configFile,
+    transpileOnly: true,
+  }
+  const loader = {
+    test: /\.tsx?$/,
+    include: paths.src._,
+    use: [
+      {
+        loader: 'babel-loader',
+        options: {
+          babelrc: true,
+        }
+      },
+      {
+        loader: 'ts-loader',
+        options: tsOptions
       }
-    },
-    {
-      loader: 'ts-loader',
-      options: tsOptions
-    }
-  ]
-}
+    ]
+  }
+  // const tsPaths = new TsconfigPathsPlugin({
+  //   configFile,
+  //   extensions: [".ts", ".tsx"],
+  // })
+
+  return {
+    loader,
+    // tsPaths,
+  }
+})()
 
 
 // ## CSS-modules w/ Typescript
@@ -50,7 +63,7 @@ const moduleCss = {
 // ## STYLES
 // support global files
 const globalCss = {
-  test: /^global.css/,
+  test: /^global.s?css/,
   loaders: ["style-loader", 'sass-loader',],
 }
 
@@ -74,6 +87,7 @@ const files = {
   ]
 }
 
+
 module.exports = {
   node: {
     __dirname: false,
@@ -81,11 +95,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['.csv', '.ts', '.tsx', '.js', '.json', '.jsx'],
-    modules: ['src', 'node_modules'],
+    modules: [paths.src._, paths.node_modules],
+    // plugins: [
+    //   typescript.paths,
+    // ]
   },
   module: {
     rules: [
-      typescript,
+      typescript.loader,
       globalCss,
       moduleCss,
       files,
