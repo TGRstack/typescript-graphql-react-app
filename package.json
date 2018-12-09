@@ -73,6 +73,7 @@
     "webpack-dev-server": "3.1.10",
     "webpack-merge": "4.1.5",
     "webpack-node-externals": "1.7.2",
+    "whatwg-fetch": "3.0.0",
     "write-file-webpack-plugin": "4.3.2"
   },
   "scripts": {

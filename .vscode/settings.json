@@ -4,7 +4,7 @@
     "**/build": true,
     "**/dist": true,
     "**/db": true,
-    "**/jest": true,
+    // "**/jest": true,
     "**/lib": true,
     "**/node_modules": false,    // hide all folders that doesn't start with '@t'
     "**/node_modules/.*": true,

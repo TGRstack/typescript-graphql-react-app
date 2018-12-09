@@ -14,6 +14,10 @@ module.exports = {
     "json",
     "node"
   ],
+  "moduleDirectories": [
+    "node_modules",
+    "<rootDir>/src/"
+  ],
   "globals": {
     "ts-jest": {
       "enableTsDiagnostics": false,
