@@ -1,5 +1,5 @@
 const { concurrent, series, } = require('nps-utils') // rimraf, setColors
-const paths = require('./paths.js')
+const paths = require('./_paths.js')
 
 module.exports = {
   default: series.nps('scrub.build', 'start.dev'),
