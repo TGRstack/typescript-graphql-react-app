@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 export default function({children}: {children: React.ReactChild}) {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {children}
-    </BrowserRouter>
+    </HashRouter>
   )
 }
