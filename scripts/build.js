@@ -6,7 +6,7 @@ module.exports = {
   description: 'Remove the previous build and run the compiler',
   client: 'npx webpack --config '+paths.wp.client.dev,
   production: {
-    default: series.nps('commit.pre', 'scrub.build', 'build.product.client'),
+    default: series.nps('commit.pre', 'scrub.build', 'build.production.client'),
     client: 'npx webpack --config '+paths.wp.client.prod,
   },
 }
