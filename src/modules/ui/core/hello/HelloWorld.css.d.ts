@@ -1,5 +1,5 @@
 export interface IHelloWorldCss {
-  'rainbow': string;
+  'rainbow': string
 }
 
-export const locals: IHelloWorldCss;
+export const locals: IHelloWorldCss

@@ -2,4 +2,4 @@ export interface IThemeScss {
 
 }
 
-export const locals: IThemeScss;
+export const locals: IThemeScss

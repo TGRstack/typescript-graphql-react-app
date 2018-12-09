@@ -8,7 +8,7 @@ export interface IListItem {
 }
 
 import List from './List'
-import {default as ListContainer } from './ListContainer'
+import { default as ListContainer } from './ListContainer'
 
 export default List
 export {

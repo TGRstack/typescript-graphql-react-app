@@ -1,4 +1,4 @@
-import {default as Button } from './Button'
+import { default as Button } from './Button'
 export default Button
 
 export {default as buttonDefaults} from './Button.defaults'

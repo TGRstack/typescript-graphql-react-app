@@ -1,4 +1,4 @@
-import Mutations, {defaultValues as mutationDefaults } from './Mutations'
+import Mutations, { defaultValues as mutationDefaults } from './Mutations'
 
 const Resolvers = {
   Mutation: Mutations
