@@ -1,9 +1,9 @@
+import { withClientState } from '@tgrx/apollo-link-state'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { ApolloClient } from 'apollo-client'
 import { ApolloLink } from 'apollo-link'
 import { onError } from 'apollo-link-error'
 import { HttpLink } from 'apollo-link-http'
-import { withClientState } from 'apollo-link-state'
 import * as React from 'react'
 import { ApolloProvider } from 'react-apollo'
 
