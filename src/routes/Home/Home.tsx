@@ -15,7 +15,7 @@ function HomeEntrancePage() {
 
       <Gx col={12}>
         <List ordered>
-          {Hello('Welcome to TGR-fullstack prototyping toolkit')}
+          {Hello('Welcome to TGR React-App skeleton')}
         </List>
       </Gx>
     </div>
