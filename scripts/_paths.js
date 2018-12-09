@@ -8,6 +8,7 @@ function mkWp() {
 }
 
 module.exports = {
+  rootPath,
   wp: {
     client: {
       dev: mkWp('webpack.dev.client.js'),

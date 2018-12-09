@@ -37,10 +37,6 @@ This starter kit is a launching point for TS React module development. Running t
 - [x] 🚀  ES2018+ support syntax that is stage-3 or later in the TC39 process.
 - [x] 🎛  Preconfigured to support development and optimized production builds
 - [x] 🎶  `typescript` incremental returns reducing development bugs
-- [x] 🚦  `tslint` configured for strict, consistent, code style
-
-### GraphQL
-
 - [x] :gem:  `apollo-client` w/ `link-state` instead of `react-redux`
 
 ### React
@@ -53,6 +49,13 @@ This starter kit is a launching point for TS React module development. Running t
 - [x] :sunrise: `typings-for-css-modules-loader` replaces 'css-loader' for webpack
 - [x] :carousel_horse: `typings-for-css-modules-loader` generates d.ts for css files
 - [x] :city_sunrise: `sass-loader` adds vars, imports, heirarchies to css.
+- [ ] replace sass support w/ stylable.io
+
+### Style
+
+- [x] 🚦  `tslint` configured for strict, consistent, code style
+- [ ] 🚦  `ts-prettier` for some of that code-consistancy that's missing from tslint
+- [ ] 🚦  `SonarTS` Static code analyzer detects bugs and suspicious patterns
 
 ### Tests
 
