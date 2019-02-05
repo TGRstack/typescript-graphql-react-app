@@ -2,6 +2,8 @@
   <h1 align='center'>Typescript React App (TGRStack)</h1>
 </p>
 
+[![Known Vulnerabilities](https://snyk.io/test/github/TGRstack/react-app/badge.svg)](https://snyk.io/test/github/TGRstack/react-app)
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-3.0.1-blue.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
 [![React](https://img.shields.io/badge/React-16.7.0.alpha.2-blue.svg?style=flat-square)](https://github.com/facebook/react)
 [![Apollo](https://img.shields.io/badge/Apollo-2.3.8-blue.svg?style=flat-square)](https://github.com/apollographql/apollo-client)
