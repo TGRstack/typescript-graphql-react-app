@@ -21,7 +21,8 @@
     "react-apollo": "2.1.11",
     "react-dom": "16.7.0-alpha.2",
     "react-helmet": "5.2.0",
-    "react-router-dom": "4.3.1"
+    "react-router-dom": "4.3.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0",
@@ -79,7 +80,9 @@
   "scripts": {
     "start": "nps",
     "test": "nps test",
-    "help": "nps help"
+    "help": "nps help",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "config": {
     "cz-emoji": {
@@ -103,5 +106,6 @@
   "bugs": {
     "url": "https://github.com/Falieson/2018-typescript-module/issues"
   },
-  "homepage": "https://github.com/Falieson/2018-typescript-module#readme"
+  "homepage": "https://github.com/Falieson/2018-typescript-module#readme",
+  "snyk": true
 }
